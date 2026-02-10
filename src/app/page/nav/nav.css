@@ -10,53 +10,22 @@ h2, p {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 16px 24px;
-  display: flex;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
 
 ul li {
-  display: flex;
-  margin: 0 8px;
+  float: left;
 }
 
 ul li a {
-  display: inline-flex;
-  align-items: center;
-  color: #e0e0e0;
+  display: block;
+  color: white;
   text-align: center;
-  padding: 10px 20px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  position: relative;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-transform: capitalize;
-  border-radius: 6px;
-}
-
-ul li a::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #00d4ff, #0099ff);
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 ul li a:hover {
-  background: rgba(0, 212, 255, 0.1);
-  color: #00d4ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
-}
-
-ul li a:hover::before {
-  width: 100%;
-}
+  background-color: #111111;
