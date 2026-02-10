@@ -4,29 +4,14 @@ import { Nav } from "./page/nav/nav";
 import { Footer } from "./page/footer/footer";
 import { FormsModule } from '@angular/forms';
 
-interface Customer{
-  name:string;
-  age:number;
-  address:string;
-}
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, Nav, Footer],
+  imports: [FormsModule, Nav, Footer, RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
   
-  customer :Customer={
-    name:'',
-    age:0,
-    address:'',
-  }
-
-  name:string="";
-
-  Clickme(){
-    alert("hii yaluwe")
-  }
 }

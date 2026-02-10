@@ -1,28 +1,5 @@
 <div>
     <app-nav></app-nav>
-    <div>
-        <h1> HELOO MAMA MEDAAAAAA</h1>
-
-        <input type="text" [(ngModel)]="customer.name" placeholder="name">
-        <input type="text" [(ngModel)]="customer.age" placeholder="age">
-        <input type="text" [(ngModel)]="customer.address" placeholder="Address">
-
-        
-        
-        
-        
-        <h1>{{customer.name}}</h1>
-        <h1>{{customer.age}}</h1>
-        <h1>{{customer.address}}</h1>
-        <input type="button" value="Click" (click)="Clickme()">
-
-
-
-
-
-          <div id="icet">
-            <iframe src="https://icet.lk/" frameborder="2"></iframe>
-        </div>
-    </div>
+    <router-outlet></router-outlet>
     <app-footer></app-footer>
 </div>
